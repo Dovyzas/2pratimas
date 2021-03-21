@@ -2,19 +2,26 @@ body {
     margin: 0;
 }
 
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
 .paragrafas:nth-child(even) {
-    width: 250px;
+    width: 300px;
     height: 200px;
     text-align: right;
 }
 
 .paragrafas:nth-child(odd) {
-    width: 250px;
+    width: 300px;
     height: 200px;
     text-align: left;
 }
 .paragrafas2 {
-    width: 250px;
+    width: 300px;
     height: 200px;
     text-align: left;
 }
@@ -31,10 +38,6 @@ h4:nth-child(even) {
     text-align: right;
 }
 
-h4 {
-    font-family: 'Montserrat', sans-serif;
-}
-
 .logo {
     margin: 20px;
     width: 150px;
@@ -46,24 +49,86 @@ h4 {
 .pirmas {
     background-image: url(1.jpg);
     background-size: contain;
+    position: relative;
+}
+
+.antras:before {
+    position: absolute; 
+    border: 1px solid rgb(228, 226, 226); 
+    width: 0; 
+    height: 140px; 
+    display: block; 
+    content: ''; 
+    left: 50%; 
+    z-index: 1; 
+    top: -145px; 
+    margin: -1px;
 }
 
 .antras {
+    position: relative;
     background-image: url(2.jpg);
     background-size: contain;
 }
+
+.trecias:before {
+    position: absolute; 
+    border: 1px solid rgb(228, 226, 226); 
+    width: 0; 
+    height: 140px; 
+    display: block; 
+    content: ''; 
+    left: 50%; 
+    z-index: 1; 
+    top: -145px; 
+    margin: -1px;
+}
 .trecias {
+    position:relative;
     background-image: url(3.jpg);
     background-size: contain;
 }
 
+.ketvirtas:before {
+    position: absolute; 
+    border: 1px solid rgb(228, 226, 226); 
+    width: 0; 
+    height: 140px; 
+    display: block; 
+    content: ''; 
+    left: 50%; 
+    z-index: 1; 
+    top: -145px; 
+    margin: -1px;
+}
+
 .ketvirtas {
+    position: relative;
     background-image: url(4.jpg);
     background-size: contain;
 }
 
+.penktas::before {
+    position: absolute; 
+    border: 1px solid rgb(228, 226, 226); 
+    width: 0; 
+    height: 140px; 
+    display: block; 
+    content: ''; 
+    left: 50%; 
+    z-index: 1; 
+    top: -145px; 
+    margin: -1px;
+}
 .penktas {
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: goldenrod;
+    text-align: center;
+    color: white;
+    font-size: 26px;
 }
 .eilute:nth-child(odd) {
     display: flex;
@@ -73,11 +138,34 @@ h4 {
 .eilute:nth-child(even) {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .eilute {
     display: flex;
     justify-content: center;
-    margin: 100px;
+    padding: 50px 0 50px 0;
     flex-direction: column;
     /* align-items: center; */
+}
+
+@media (max-width: 600px) {
+    .eilute:nth-child(odd) {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .eilute:nth-child(even) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .eilute {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .paragrafas:nth-child(even) {
+        width: 300px;
+        height: 200px;
+        text-align: left;
+    }
 }
