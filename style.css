@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+}
+
+.paragrafas:nth-child(even) {
+    width: 250px;
+    height: 200px;
+    text-align: right;
+}
+
+.paragrafas:nth-child(odd) {
+    width: 250px;
+    height: 200px;
+    text-align: left;
+}
+.paragrafas2 {
+    width: 250px;
+    height: 200px;
+    text-align: left;
+}
+
+/* h4:nth-child(odd) {
+    margin: 0;
+    width: 250px;
+    text-align: right;
+} */
+
+h4:nth-child(even) {
+    margin: 0;
+    width: 250px;
+    text-align: right;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(228, 226, 226);
+}
+
+.pirmas {
+    background-image: url(1.jpg);
+    background-size: contain;
+}
+
+.antras {
+    background-image: url(2.jpg);
+    background-size: contain;
+}
+.trecias {
+    background-image: url(3.jpg);
+    background-size: contain;
+}
+
+.ketvirtas {
+    background-image: url(4.jpg);
+    background-size: contain;
+}
+
+.penktas {
+    background-color: yellow;
+}
+.eilute:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.eilute:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+}
+.eilute {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    flex-direction: column;
+    /* align-items: center; */
+}
